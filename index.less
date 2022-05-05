@@ -7,7 +7,7 @@
     display: inline-block;
     line-height: 1.25rem;
     text-align: center;
-    padding: 5px 16px;
+    padding: 4px 8px;
     font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
@@ -21,34 +21,35 @@
     appearance: none;
     color: #24292f;
     background-color: #f6f8fa;
-    border-color: rgba(27,31,36,0.15);
-    box-shadow: 0 1px 0 rgba(27,31,36,0.04),inset 0 1px 0 rgba(255,255,255,0.25);
+    border-color: rgba(27, 31, 36, 0.15);
+    box-shadow: 0 1px 0 rgba(27, 31, 36, 0.04),
+      inset 0 1px 0 rgba(255, 255, 255, 0.25);
     transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
-    transition-property: color,background-color,box-shadow,border-color;
+    transition-property: color, background-color, box-shadow, border-color;
 
     &:hover {
       background-color: #f3f4f6;
-      border-color: rgba(27,31,36,0.15);
+      border-color: rgba(27, 31, 36, 0.15);
       transition-duration: 0.1s;
     }
 
     &:active {
-      background-color: hsla(220,14%,93%,1);
-      border-color: rgba(27,31,36,0.15);
+      background-color: hsla(220, 14%, 93%, 1);
+      border-color: rgba(27, 31, 36, 0.15);
       transition: none;
     }
 
-    &[aria-selected='true'] {
-      background-color: hsla(220,14%,94%,1);
-      box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+    &[aria-selected="true"] {
+      background-color: hsla(220, 14%, 94%, 1);
+      box-shadow: inset 0 1px 0 rgba(208, 215, 222, 0.2);
     }
   }
-  
+
   .button.disabled {
     cursor: not-allowed;
     color: #8c959f;
     background-color: #f6f8fa;
-    border-color: rgba(27,31,36,0.15);
+    border-color: rgba(27, 31, 36, 0.15);
     box-shadow: none;
   }
 
@@ -59,7 +60,8 @@
     width: @default-img-width;
     height: 64px;
     border: 1px dashed #ccc;
-    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    background-color: rgba(238, 238, 238, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,14 +91,13 @@
       margin-right: 0;
     }
     .remove-all {
-      height: 2rem;
+      height: 1.875rem;
     }
   }
   .images-upload {
     padding-top: 12px;
     .button {
       width: @default-img-width;
-      line-height: 1.5rem;
     }
   }
 }
