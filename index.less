@@ -1,0 +1,72 @@
+@default-img-width: 140px;
+
+.image-uploader-wrapper {
+  position: relative;
+  .button {
+    display: inline-block;
+    line-height: 1rem;
+    padding: 2px 4px;
+    font-weight: 400;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px #000;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .button.disabled {
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .native-input {
+    display: none;
+  }
+  .drag-box {
+    width: @default-img-width;
+    height: 64px;
+    border: 1px dashed #ccc;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .images-list {
+    display: flex;
+    margin: 12px 0 0;
+    .image-item {
+      width: @default-img-width;
+      margin-right: 8px;
+      .image-preview {
+        width: 100%;
+        & > img {
+          max-height: @default-img-width;
+        }
+      }
+      .image-action-btn {
+        padding: 4px 0;
+        text-align: center;
+        .update {
+          margin-right: 4px;
+        }
+      }
+    }
+    .image-item:last-child {
+      margin-right: 0;
+    }
+    .remove-all {
+      height: 2rem;
+    }
+  }
+  .images-upload {
+    padding-top: 12px;
+    .button {
+      width: @default-img-width;
+      line-height: 1.5rem;
+    }
+  }
+}
