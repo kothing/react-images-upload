@@ -21,7 +21,7 @@ You can check out the basic demo here:
 
 **Basic**
 
-```tsx
+```jsx
 import React from 'react';
 import ImageUpload from './react-images-upload';
 
