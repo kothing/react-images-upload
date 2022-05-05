@@ -12,7 +12,6 @@ This approach allows you to fully control UI component and behaviours.
 - [Props](#props)
   - [Note](#note)
 - [Exported options](#exported-options)
-- [Contributors ✨](#contributors-)
 
 ## Usage
 
