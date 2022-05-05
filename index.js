@@ -15,7 +15,7 @@ const ImageUpload = ({
   onError,
   children,
   dataURLKey = DEFAULT_DATA_URL_KEY,
-  multiple = false,
+  multiple = true,
   maxNumber = INIT_MAX_NUMBER,
   acceptType,
   maxFileSize,
@@ -24,7 +24,7 @@ const ImageUpload = ({
   resolutionType,
   inputProps = {},
   autoPending = true,
-  showRemoveAll = false,
+  showRemoveAll = true,
   wrapperClass,
   className,
 }) => {
