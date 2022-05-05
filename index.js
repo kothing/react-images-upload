@@ -32,10 +32,10 @@ const ImageUpload = ({
   wrapperClass,
   className
 }) => {
-  const inValue = (imageList || []).map((m) => {
+  const inValue = (imageList || []).map((m, i) => {
     const n = { ...m };
     if (!n.uniKey) {
-      n.uniKey = new Date().getTime();
+      n.uniKey = `${new Date().getTime()}-${i}`;
     }
     return n;
   });
