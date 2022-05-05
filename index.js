@@ -23,7 +23,7 @@ const ImageUpload = ({
   resolutionHeight,
   resolutionType,
   inputProps = {},
-  autoPending = true,
+  autoPending = false,
   showRemoveAll = true,
   wrapperClass,
   className,
