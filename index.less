@@ -13,7 +13,6 @@
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #ccc;
-    box-shadow: 0 2px #000;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
@@ -39,6 +38,8 @@
     display: flex;
     margin: 12px 0 0;
     .image-item {
+      display: flex;
+      flex-direction: column;
       width: @default-img-width;
       margin-right: 8px;
       .image-preview {
