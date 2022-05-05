@@ -17,7 +17,7 @@ This approach allows you to fully control UI component and behaviours.
 
 You can check out the basic demo here:
 
-- Javascript: [https://codesandbox.io/s/react-images-uploading-demo-u0khz](https://codesandbox.io/s/react-images-uploading-demo-u0khz)
+- Javascript: [https://codesandbox.io/s/react-images-upload-demo-wgwqbm](https://codesandbox.io/s/react-images-upload-demo-wgwqbm)
 
 **Basic**
 
