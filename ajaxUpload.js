@@ -50,7 +50,7 @@ export default function ajaxUpload(option) {
   const formData = new FormData();
   if (option.data) {
     (option.data || []).forEach((item) => {
-      formData.append("file", item);
+      formData.append(option.formDataName, item);
     });
   }
 
