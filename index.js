@@ -22,6 +22,7 @@ const ImageUpload = ({
   multiple = true,
   maxNumber = INIT_MAX_NUMBER,
   acceptType,
+  formDataName = 'file',
   maxFileSize,
   resolutionWidth,
   resolutionHeight,
@@ -186,6 +187,7 @@ const ImageUpload = ({
       withCredentials: {},
       data: inValue.map((item) => item.file),
       url: uploadUrl,
+      formDataName,
       onProgress: (e) => {
         console.log(e);
       },
